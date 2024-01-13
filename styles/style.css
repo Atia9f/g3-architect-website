@@ -15,6 +15,10 @@
     border: 0;
   }
 
+  .text-light-grey{
+    color: #727272;
+  }
+
   /* header style */
 
   header{
@@ -58,9 +62,7 @@
     font-weight: 700;
     color: #131313;
   }
-  .banner-description{
-    color: #727272;
-  }
+  
   .banner img{
     margin-top: 20px;
     width: 100%;
@@ -69,7 +71,7 @@
   /* main style */
   main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
   }
   
   .team-container{
@@ -109,8 +111,15 @@
     header{
       padding: 20px;
     }
-    nav{
+    nav, .team-container{
       flex-direction: column;
+    }
+    .teams-img-container{
+      grid-template-columns: 1fr;
+    }
+    .teams-content{
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
@@ -120,7 +129,7 @@
     header{
       padding: 50px;
     }
-    nav{
+    nav, .team-container{
       flex-direction: column;
     }
   }
